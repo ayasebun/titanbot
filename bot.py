@@ -53,4 +53,30 @@ async def on_message(message):
         await message.add_reaction(emoji)
 
 
-client.run(config['discord']['token'])qq^Ciscordapp.com/attachments/564386972852813833/893279654281109575/ifritmood.png", mention_author=True)
+
+    if 'cancel' in message.content.lower():
+        print('Cancel Found')
+        emoji = '<:cmontan:854236706626076742>'
+        await message.add_reaction(emoji)
+
+
+    if message.content.startswith('!8balltan'):
+        print('8 Ball Titan')
+        titans = ['<:yestan:608551635844857856>',
+                '<:notan:612894048990003200>',
+                '<:doubtan:637821087987662856>',
+                '<:thinktan:610471993619382328>',
+                '<:thonktan:610474371672178713>',
+                '<:thonktanry:610474396200599552>']
+
+        emote = random.choice(titans)
+        await message.reply(emote, mention_author=True)
+
+
+
+    if "Heehee HAHA hahaha HEEHEE haha HEEEEEE!!!" in message.content:
+        await message.reply("https://cdn.discordapp.com/attachments/564386972852813833/893279654281109575/ifritmood.png", mention_author=True)
+
+#bot content END
+#read config for token
+client.run(config['discord']['token'])

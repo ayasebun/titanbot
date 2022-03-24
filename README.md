@@ -4,7 +4,7 @@
 titanbot was created with the intention of teasing my friends. Please note that this is extremely ameteur code.
 
 ## Hopefully helpful information to someone looking for discord bot examples
-Most discord bot examples may ask that you toss your token directly into the bot. Through the use of `configparser`, we're able to get away with keeping a `settings.ini` file instead. It will look as so:
+Some discord bot examples may ask that you toss your token directly into the bot. Through the use of `configparser`, we're able to get away with keeping a `settings.ini` file instead. It will look as so:
 
 ```
 [discord]
